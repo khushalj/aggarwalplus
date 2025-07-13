@@ -9,10 +9,10 @@ st.title("Carton Box Order Booking App")
 if 'orders' not in st.session_state:
     st.session_state.orders = []
 
-st.sidebar.header("Customer & Order Entry")
+# Customer and Order Entry Form
+st.header("Customer & Order Entry")
 
-# Customer details
-with st.sidebar.form("customer_form"):
+with st.form("customer_form"):
     st.subheader("Customer Details")
     name = st.text_input("Customer Name")
     address = st.text_area("Address")
